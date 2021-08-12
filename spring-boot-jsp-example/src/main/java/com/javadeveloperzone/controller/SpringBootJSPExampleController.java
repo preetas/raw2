@@ -12,6 +12,6 @@ public class SpringBootJSPExampleController {
 
     @RequestMapping("welcome")                     // it will handle all request for /welcome
     public String SpringBootHello() {
-        return "welcome";     // welcome is view name. It will call welcome.jsp
+         return ("Hello, SpringBoot on Wildfly");  // welcome is view name. It will call welcome.jsp
     }
 }
