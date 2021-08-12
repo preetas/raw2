@@ -45,7 +45,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                <configuration>
-                <mainClass>com.lapots.breed.hero.journey.web.HeroJourneyWebApplication</mainClass>
+                <mainClass>com.javadeveloperzone.controller.SpringBootJspController </mainClass>
             </configuration>
             </plugin>
             <plugin>
