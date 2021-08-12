@@ -45,7 +45,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                <configuration>
-                <mainClass>com.javadeveloperzone.controller.SpringBootJSPExampleController<mainClass>
+                <mainClass>com.javadeveloperzone.controller.SpringBootJSPExampleController</mainClass>
             </configuration>
             </plugin>
             <plugin>
