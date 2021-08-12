@@ -1,16 +1,17 @@
 package com.javadeveloperzone.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 
-/**
- * Created by Lenovo on 19-07-2017.
- */
-@Controller
-public class SpringBootJSPExampleController {
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-                       // it will handle all request for /welcome
-    public String SpringBootHello() {
-        return "welcome";           // welcome is view name. It will call welcome.jsp
-    }
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SpringbootDemoApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
 }
