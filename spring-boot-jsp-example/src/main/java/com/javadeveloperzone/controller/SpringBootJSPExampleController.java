@@ -11,7 +11,6 @@ import org.springframework.boot.SpringApplication;
  * Created by Lenovo on 19-07-2017.
  */
 @Controller
-@EnableAutoConfiguration
 public class SpringBootJSPExampleController {
 
     @RequestMapping("welcome") 
