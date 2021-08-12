@@ -13,7 +13,7 @@ import org.springframework.boot.SpringApplication;
 @Controller
 public class SpringBootJSPExampleController {
 
-    @GetMapping("/welcome") // it will handle all request for /welcome
+    @GetMapping({"/", "/hello"}) // it will handle all request for /welcome
     public String SpringBootHello() {
          return "welcome";  // welcome is view name. It will call welcome.jsp
     }
