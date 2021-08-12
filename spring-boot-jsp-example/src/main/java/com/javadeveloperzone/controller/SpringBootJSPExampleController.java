@@ -10,11 +10,12 @@ import org.springframework.boot.SpringApplication;
 /**
  * Created by Lenovo on 19-07-2017.
  */
-@RestController
+@Controller
 @EnableAutoConfiguration
 public class SpringBootJSPExampleController {
 
-    @RequestMapping("welcome")                     // it will handle all request for /welcome
+    @RequestMapping("welcome") 
+    @ResponseBody                 // it will handle all request for /welcome
     public String SpringBootHello() {
          return "welcome";  // welcome is view name. It will call welcome.jsp
     }
