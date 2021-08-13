@@ -13,7 +13,6 @@ import org.springframework.context.annotation.ComponentScan;
  * Created by Lenovo on 19-07-2017.
  */
 @Controller
-@ComponentScan(basePackages = {"webapp.WEB-INF.jsp"})
 public class SpringBootJSPExampleController {
 
     @RequestMapping("/") // it will handle all request for /welcome
