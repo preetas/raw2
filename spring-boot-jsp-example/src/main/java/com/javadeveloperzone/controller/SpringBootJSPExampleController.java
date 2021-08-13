@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @Controller
 public class SpringBootJSPExampleController {
 
-    @RequestMapping("/") // it will handle all request for /welcome
+    @RequestMapping("/welcome") // it will handle all request for /welcome
     public String SpringBootHello() {
          return "welcome";  // welcome is view name. It will call welcome.jsp
     }
