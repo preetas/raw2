@@ -37,7 +37,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>              <!--fot jap compilation need provide scope runtime or provided because it available in tomcat -->
             <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>runtime</scope>     <!-- in my case provided not working so write runtime-->
+            <!--- <scope>runtime</scope>  -->   <!-- in my case provided not working so write runtime-->
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>           <!-- for jsp jstl tags-->
