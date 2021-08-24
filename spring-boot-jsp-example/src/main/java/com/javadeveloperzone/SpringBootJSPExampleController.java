@@ -1,4 +1,4 @@
-package com.javadeveloperzone.controller;
+package com.javadeveloperzone;
 
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
