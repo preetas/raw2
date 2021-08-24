@@ -1,14 +1,8 @@
 package com.javadeveloperzone;
 
-import org.springframework.boot.SpringApplication;
+/*import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.ComponentScan;
-
-/**
- * Created by JavaDeveloperZone on 19-07-2017.
- */
+import 
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.javadeveloperzone.controller"})
@@ -22,4 +16,4 @@ public class SpringBootConfig extends SpringBootServletInitializer {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SpringBootConfig.class, args);            // it wil start application
     }
-}
+}*/
