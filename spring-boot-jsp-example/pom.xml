@@ -12,7 +12,22 @@
     <!-- Inherit defaults from Spring Boot -->
     <parent> <groupId>org.springframework.boot</groupId> 
 <artifactId>spring-boot-starter-parent</artifactId>
- <version> 1.4.2.RELEASE </version> </parent>  
+ <version> 1.4.2.RELEASE </version> </parent> 
+ <profiles>
+    <profile>
+        <id>profile1</id>
+        <properties>
+          <spring.boot.mainclass>com.SomeClass</spring.boot.mainclass>
+        </properties>
+    </profile>
+    <profile>
+        <id>profile2</id>
+        <properties>
+          <spring.boot.mainclass>com.SomeOtherClass</spring.boot.mainclass>
+        </properties>
+    </profile>
+</profiles>
+
 <properties>         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
 <java.version>1.8</java.version> </properties> 
