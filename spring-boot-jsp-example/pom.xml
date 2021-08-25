@@ -13,6 +13,11 @@
     <parent> <groupId>org.springframework.boot</groupId> 
 <artifactId>spring-boot-starter-parent</artifactId>
  <version> 1.4.2.RELEASE </version> 
+</parent>
+<plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <version>1.4.2.RELEASE</version>
 
 <executions>
       <execution>
@@ -25,7 +30,7 @@
       </execution>
     </executions>
 
-</parent> 
+</plugin>
  <profiles>
     <profile>
         <id>profile1</id>
