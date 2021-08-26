@@ -38,7 +38,7 @@
   </artifactId>
 
 <configuration>    
-            <mainClass> com.javadeveloperzone.controller.SpringBootJSPExampleController</mainClass>
+            <mainClass> com.javadeveloperzone.WebMvcConfigExample    </mainClass>
         </configuration>
 
 
