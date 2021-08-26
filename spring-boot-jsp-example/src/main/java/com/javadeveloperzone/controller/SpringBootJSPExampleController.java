@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import org.springframework.context.annotation.Profile;
+
 /**
  * Created by Lenovo on 19-07-2017.
  */
