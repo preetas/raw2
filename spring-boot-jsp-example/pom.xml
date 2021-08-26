@@ -33,13 +33,11 @@
 </dependencies>  
 <build> <plugins> <plugin> 
 <groupId>org.springframework.boot</groupId> 
-<artifactId>spring-boot-maven-plugin</artifactId>
-<properties>
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<artifactId>spring-boot-maven-plugin
 
-<start-class> com.javadeveloperzone.controller.SpringBootJSPExampleController
-</start-class>
-</properties>
+<configuration>    
+            <mainClass> com.javadeveloperzone.controller.SpringBootJSPExampleController</mainClass>
+        </configuration>
 
 
  </plugin> </plugins> </build> 
