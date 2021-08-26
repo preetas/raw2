@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication; import org.springframework.bo
 
 import org.springframework.context.annotation.Profile;
 
-@Profile("profile1")
+
 @SpringBootApplication 
 public class WebMvcConfigExample 
 {  public static void main (String[] args)
