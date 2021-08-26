@@ -2,7 +2,7 @@ package com.javadeveloperzone;
 
 import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootApplication; 
 
-@Profile("!profile1")
+@Profile("profile1")
 @SpringBootApplication 
 public class WebMvcConfigExample 
 {  public static void main (String[] args)
