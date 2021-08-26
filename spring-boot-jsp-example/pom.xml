@@ -17,7 +17,10 @@
 
 <properties>         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
-<java.version>1.8</java.version> </properties> 
+<java.version>1.8</java.version> 
+
+ 
+</properties> 
 <dependencies>         
 <dependency> <groupId>org.springframework.boot</groupId> 
 <artifactId>spring-boot-starter-web</artifactId> 
@@ -31,36 +34,9 @@
 <build> <plugins> <plugin> 
 <groupId>org.springframework.boot</groupId> 
 <artifactId>spring-boot-maven-plugin</artifactId>
+<start-class> com.javadeveloperzone.controller.SpringBootJSPExampleController
+</start-class>
 
-<configuration>
-
- <profiles>
-    <profile>
-        <id>profile1</id>
-        <properties>
-          <spring.boot.mainclass> com.javadeveloperzone </spring.boot.mainclass>
-        </properties>
-    </profile>
-    <profile>
-        <id>profile2</id>
-        <properties>
-          <spring.boot.mainclass> com.javadeveloperzone.controller</spring.boot.mainclass>
-        </properties>
-    </profile>
-</profiles>
-
- </configuration>
-
-<executions>
-      <execution>
-        <goals>
-          <goal>repackage</goal>
-        </goals>
-        <configuration>
-          <mainClass>${spring.boot.mainclass}</mainClass>
-        </configuration>
-      </execution>
-    </executions>
 
  </plugin> </plugins> </build> 
 </project>
