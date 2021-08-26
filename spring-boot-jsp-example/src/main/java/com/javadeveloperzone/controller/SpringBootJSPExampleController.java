@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Profile;
  * Created by Lenovo on 19-07-2017.
  */
 
-@Profile("profile2")
+
 @Controller
 public class SpringBootJSPExampleController {
 
