@@ -1,30 +1,28 @@
-package com.javadeveloperzone;
+import com.javadeveloperzone;
 
-import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootApplication; 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
-import org.springframework.context.annotation.Profile;
+@Configuration
+@ComponentScan(basePackages = "com.javadeveloperzone.controller")
+//@EnableWebMvc
+@EnableAutoConfiguration
+public class Application extends SpringBootServletInitializer {
+	
+	 private static Class applicationClass = Application.class;
 
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
-@SpringBootApplication 
-public class WebMvcConfigExample 
-{  public static void main (String[] args)
- {  SpringApplication app = new SpringApplication(WebMvcConfigExample.class); 
-app.run(args); } }
-
-/*import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import 
-
-@SpringBootApplication
-@ComponentScan(basePackages = {"com.javadeveloperzone.controller"})
-// Using a root package also allows the @ComponentScan annotation to be used without needing to specify a basePackage attribute
-public class SpringBootConfig extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SpringBootConfig.class);
+        return application.sources(applicationClass);
     }
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(SpringBootConfig.class, args);            // it wil start application
-    }
-}*/
+}
