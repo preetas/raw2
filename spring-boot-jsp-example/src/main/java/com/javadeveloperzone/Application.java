@@ -7,7 +7,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"com.example.mvc"})
+@ComponentScan(basePackages= {"com.javadeveloperzone.controller"})
 public class Application extends SpringBootServletInitializer {
 
 	@Override
